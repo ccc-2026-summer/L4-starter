@@ -2,6 +2,9 @@
 
 body {
   margin: 0;
+  /* 撐滿視窗，matter.js 的滑鼠事件掛在 body 上，空白處才接得到 */
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 a {
@@ -32,6 +35,8 @@ ul {
   list-style: none;
   position: absolute;
   background: #000;
+  cursor: grab;
+  user-select: none;
   /* transform: rotate(90deg); */
 
   img {

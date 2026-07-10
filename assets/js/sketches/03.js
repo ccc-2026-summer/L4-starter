@@ -1,3 +1,5 @@
+import p5 from 'p5';
+
 const params = {
   feed: 0.036,
   kill: 0.06,
@@ -116,3 +118,10 @@ function draw() {
 function keyPressed(event) {
   seedLetter(event.key);
 }
+
+// ES module 內的函式不會自動變成全域，要手動掛到 window 讓 p5 global mode 找到
+window.setup = setup;
+window.draw = draw;
+window.windowResized = windowResized;
+window.keyPressed = keyPressed;
+new p5();

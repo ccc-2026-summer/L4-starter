@@ -1,5 +1,14 @@
 # L4 - 網頁基礎
 
+## 開發
+
+```bash
+npm install   # 第一次先安裝套件
+npm run dev   # 啟動開發伺服器
+npm run build # 打包到 dist/
+```
+
+
 ## 課前準備
 
 ### 1. 安裝

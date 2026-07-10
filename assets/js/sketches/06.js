@@ -1,3 +1,5 @@
+import p5 from 'p5';
+
 const params = {
   speed: 1,
   direction: 'rl',
@@ -105,3 +107,9 @@ function draw() {
   }
   updatePixels();
 }
+
+// ES module 內的函式不會自動變成全域，要手動掛到 window 讓 p5 global mode 找到
+window.setup = setup;
+window.draw = draw;
+window.windowResized = windowResized;
+new p5();
