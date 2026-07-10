@@ -1,1 +1,51 @@
 /* css 和 html 不同的語言，這是 css 的註解符號 */
+
+body {
+  margin: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+img, video {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.site-title {
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  z-index: 1;
+  color: #fff;
+}
+
+.work-item {
+  width: 300px;
+  list-style: none;
+  position: absolute;
+  background: #000;
+  /* transform: rotate(90deg); */
+
+  img {
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .title {
+    color: white;
+    position: absolute;
+    left: 1em;
+    bottom: 1em;
+  }
+}
